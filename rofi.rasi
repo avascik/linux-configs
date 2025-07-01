@@ -1,0 +1,106 @@
+/* ROFI VERTICAL THEME USING THE NORD COLOR PALETTE */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+
+* {
+    font:   "Pixel Operator 12";
+
+    nord0:     #000000;
+    nord1:     #000000;
+    nord2:     #000000;
+    nord3:     #000000;
+
+    nord4:     #ffffff;
+    nord5:     #ffffff;
+    nord6:     #ffffff;
+
+    nord7:     #ffffff;
+    nord8:     #ffffff;
+    nord9:     #ffffff;
+    nord10:    #ffffff;
+    nord11:    #bf616a;
+
+    nord12:    #d08770;
+    nord13:    #ebcb8b;
+    nord14:    #a3be8c;
+    nord15:    #b48ead;
+
+    background-color:   transparent;
+    text-color:         @nord4;
+    accent-color:       @nord8;
+
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+}
+
+window {
+    background-color:   @nord0;
+    border-color:       #000000;
+
+    location:   northwest;
+    width:      480px;
+    height:     100%;
+    border:    0px;
+}
+
+inputbar {
+    padding:    8px 12px;
+    spacing:    12px;
+    children:   [ prompt, entry ];
+}
+
+prompt, entry, element-text, element-icon {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+listview {
+    lines:      8;
+    columns:    1;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    8px;
+    spacing:    8px;
+}
+
+element normal urgent {
+    text-color: @nord13;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element alternate active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @nord0;
+}
+
+element selected normal {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @nord13;
+}
+
+element selected active {
+    background-color:   @nord8;
+}
+
+element-icon {
+    size:   0.75em;
+}
+
+element-text {
+    text-color: inherit;
+}

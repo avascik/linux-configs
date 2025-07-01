@@ -1,0 +1,9 @@
+
+//@theme "/home/avast/.nix-profile/share/rofi/themes/sidebar.rasi"
+//@theme "/usr/share/rofi/themes/sidebar.rasi"
+
+//@theme "/home/avast/.nix-profile/share/rofi/themes/sidebar.rasi"
+
+//@theme "/home/avast/.local/share/rofi/themes/launchpad.rasi"
+
+@theme "rofi.rasi"
