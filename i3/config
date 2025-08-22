@@ -55,7 +55,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id wezterm
+bindsym $mod+Return exec --no-startup-id kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -191,12 +191,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 3px
-gaps outer 1px
-
 title_align center
 
 for_window [class=".*"] border pixel 0
 
 for_window [title="Otwórz poziom"] floating enable, focus
 for_window [title="Save File"] floating enable, focus
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #666666 #666666 #666666 #666666   #666666
+client.focused_inactive #aaaaaa #aaaaaa #aaaaaa #aaaaaa   #aaaaaa
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
